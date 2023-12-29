@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boggle Game</title>
+     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/boggle.js"></script> 
+    <link rel="stylesheet" href="/static/play.css"     
+</head>
+<body>
+    <h1>Boggle Game</h1>
+    
+        <table>
+            {% for row in board %}
+            <tr>
+                {% for letter in row %}
+                <td>{{ letter }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <!-- Form for guesses -->
+   <div>
+        <h2>Guess!</h2>
+        <form id="guessForm">
+            <label for="guess">Enter your guess:</label>
+            <input type="text" id="guess" name="guess">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="resultMessage"></p>
+    </div>
+    <!-- Score -->
+    <div> 
+        <h2>Score</h2>
+        <p id="score">Score: 0</p>
+    </div>
+    <!-- Timer -->
+    <div>
+        <h2>Timer</h2>
+        <p id="timer">Time left: 60 seconds</p>
+    </div>
+    
+</body>
+</html>

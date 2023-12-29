@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    background-color: #7cabf1;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
